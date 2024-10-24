@@ -21,8 +21,10 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    void Start(){
-        PlayMusic("background"); //**** Put sound name here
+    void Start()
+    {
+        PlayMusic("Music"); //**** Put sound name here
+        PlayMusic("Steps");
     }
     public void PlayMusic(string name){
         SoundManager s = Array.Find(musicSound, x => x.name == name);
