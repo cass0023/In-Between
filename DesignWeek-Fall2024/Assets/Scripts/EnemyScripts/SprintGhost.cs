@@ -21,7 +21,7 @@ public class SprintGhost : MonoBehaviour
         {
             var currentEnemy = Instantiate(enemyPrefab, enemySpawnPoint.position, enemySpawnPoint.rotation);
             currentEnemy.GetComponent<Rigidbody>().velocity = transform.forward * enemySpeed;
-            currentEnemy.transform.Translate(Vector3.forward * enemySpeed );
+            currentEnemy.transform.Translate(Vector3.forward * enemySpeed);
             currentPrefab = currentEnemy;
         } 
     }
