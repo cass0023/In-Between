@@ -6,21 +6,21 @@ using UnityEngine.UI;
 public class TestLightManager : MonoBehaviour
 {
     public KeyCode flashlightInput;
+    public KeyCode flashlightRech;
     public GameObject flashlight;
     public float ActualEnergy = 100;
     public float MaxEnergy = 100;
-    public float Velocity = 2f;
+    public float Velocity = 20f;
+    public float VelocityRech;
     public Light LigthFlash;
 
     public Image Battery;
   
-
     // Start is called before the first frame update
     void Start()
     {
 
     }
-   
    
 
     // Update is called once per frame
@@ -28,13 +28,15 @@ public class TestLightManager : MonoBehaviour
     {
         if (Input.GetKey(flashlightInput))
         {
-           if (LigthFlash.enabled == false)
+            LightSource();
+            if (LigthFlash.enabled == false)
             { 
                 LigthFlash.enabled = true;
             }
         }
         else if (LigthFlash.enabled == true)
         {
+            flashlight.SetActive(false);
             LigthFlash.enabled = false;
         }
 
@@ -49,8 +51,22 @@ public class TestLightManager : MonoBehaviour
             }
         }
 
+        else if (Input.GetKey(flashlightRech))
+        {
+            ActualEnergy += Time.deltaTime * VelocityRech;
+            if (ActualEnergy >= MaxEnergy) 
+            { 
+            ActualEnergy= MaxEnergy;
+            }
+        }
+
         Battery.fillAmount = ActualEnergy / MaxEnergy;
 
     }
-   
+
+    private void LightSource()
+    {
+        flashlight.SetActive(true);
+    }
+
 }

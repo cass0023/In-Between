@@ -40,7 +40,8 @@ public class LightManager : MonoBehaviour
         }
 
     }
-    private void LightSource(){
+    private void LightSource()
+    {
         flashlight.SetActive(true);
     }
 }
