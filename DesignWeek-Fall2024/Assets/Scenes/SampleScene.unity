@@ -474,7 +474,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cf96b5e27dbf354f8a5b81d23c9ab04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashlightInput: 32
+  flashlightInput: 119
   flashlight: {fileID: 1491644728}
   ActualEnergy: 100
   MaxEnergy: 100
