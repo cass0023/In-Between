@@ -4,16 +4,12 @@ using UnityEngine;
 
 public class Flashlight : MonoBehaviour
 {
-    public KeyCode flashlightInput;
-
     void OnTriggerEnter(Collider collider)
     {
-        if (Input.GetKey(flashlightInput)) 
+        if (collider.gameObject.CompareTag("Enemy"))
         {
-            if (collider.gameObject.CompareTag("Enemy"))
-            {
-                Destroy(collider.gameObject);
-            }
+            Destroy(collider.gameObject);
         }
+
     }
 }

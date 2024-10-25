@@ -10,7 +10,7 @@ public class GameController : MonoBehaviour
     public Image[] lives;
     public int livesRemaining;
     
-    Vector2 startPos;
+    Vector3 startPos;
     private void Start()
     {
         startPos = transform.position;
@@ -18,10 +18,11 @@ public class GameController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Enemy"))
-        {
-            Die();
-        }
+        // if (other.CompareTag("Enemy"))
+        // {
+        //     Destroy(other.gameObject);
+        //     Die();
+        // }
     }
     public void LoseLife()
     {

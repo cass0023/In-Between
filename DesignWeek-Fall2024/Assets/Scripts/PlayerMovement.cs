@@ -9,11 +9,6 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
 
 
-    void Start()
-    {
-        
-    }
-
     private void FixedUpdate()
     {
         Vector3 a = transform.position;

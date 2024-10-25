@@ -18,6 +18,7 @@ public class CeilingDrop : MonoBehaviour
         if (transform.position.z > camPos.position.z + delay){
             transform.position = new Vector3(camPos.position.x, camPos.position.y, camPos.position.z + delay);
             rb.constraints = RigidbodyConstraints.FreezeAll;
+            gameObject.tag = "Enemy";
         }
     }
 }
