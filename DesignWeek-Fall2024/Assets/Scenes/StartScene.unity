@@ -6918,7 +6918,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3a8e7f26c4d32e499e9c2e987dfecaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashlightInput: 32
+  flashlightInput: 100
 --- !u!4 &2069467505
 Transform:
   m_ObjectHideFlags: 0
