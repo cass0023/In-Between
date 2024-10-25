@@ -2555,7 +2555,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemySpawnPoint: {fileID: 1867108454}
   enemyPrefab: {fileID: 4084478535909638761, guid: 8093979369c97084c85addea8234f59f, type: 3}
-  enemySpeed: 8
+  enemySpeed: 10
 --- !u!4 &2079068811 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8678444409541975727, guid: 26f84bc12d48eb44eb99aeda84bddb07, type: 3}
