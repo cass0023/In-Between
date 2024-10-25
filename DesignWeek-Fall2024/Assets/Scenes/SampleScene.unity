@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 2.3
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.3056603, g: 0, b: 0.08843772, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 45393aeb3a23e41448c136a05980c848, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 71b634fec31b38b46a30f6185273a772, type: 2}
   m_HaloStrength: 0.421
   m_FlareStrength: 0.204
   m_FlareFadeSpeed: 10.69
@@ -646,7 +646,7 @@ MonoBehaviour:
   flashlight: {fileID: 1491644728}
   ActualEnergy: 100
   MaxEnergy: 100
-  Velocity: 10
+  Velocity: 50
   VelocityRech: 5
   LigthFlash: {fileID: 1491644730}
   Battery: {fileID: 852870809}
@@ -1101,6 +1101,10 @@ PrefabInstance:
       propertyPath: speed
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 4293010068473320622, guid: 26f84bc12d48eb44eb99aeda84bddb07, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 95279924a381d934790648b610bd2536, type: 3}
     - target: {fileID: 7345712689495540069, guid: 26f84bc12d48eb44eb99aeda84bddb07, type: 3}
       propertyPath: m_Name
       value: DoorEnemy2-2
@@ -1713,6 +1717,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1003275170837346331, guid: 279eab5295627a442b012a1b327b0919, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 95279924a381d934790648b610bd2536, type: 3}
     - target: {fileID: 1086945318092733423, guid: 279eab5295627a442b012a1b327b0919, type: 3}
       propertyPath: m_Name
       value: DoorEnemy3
@@ -2192,6 +2200,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1003275170837346331, guid: 279eab5295627a442b012a1b327b0919, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 95279924a381d934790648b610bd2536, type: 3}
     - target: {fileID: 1086945318092733423, guid: 279eab5295627a442b012a1b327b0919, type: 3}
       propertyPath: m_Name
       value: DoorEnemy2
@@ -3174,6 +3186,10 @@ PrefabInstance:
       propertyPath: speed
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 4293010068473320622, guid: 26f84bc12d48eb44eb99aeda84bddb07, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 95279924a381d934790648b610bd2536, type: 3}
     - target: {fileID: 7345712689495540069, guid: 26f84bc12d48eb44eb99aeda84bddb07, type: 3}
       propertyPath: m_Name
       value: DoorEnemy1-2
@@ -3280,6 +3296,10 @@ PrefabInstance:
       propertyPath: Priority
       value: 169
       objectReference: {fileID: 0}
+    - target: {fileID: 1003275170837346331, guid: 279eab5295627a442b012a1b327b0919, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 95279924a381d934790648b610bd2536, type: 3}
     - target: {fileID: 1086945318092733423, guid: 279eab5295627a442b012a1b327b0919, type: 3}
       propertyPath: m_Name
       value: DoorEnemy1
