@@ -24,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Player.gameObject.tag == "Enemy")
         {
+            Destroy(Player.gameObject);
             ScaryMonster.SetActive(true);
             StartCoroutine(restart());
             source.clip = sounds[Random.Range(0, sounds.Length)];

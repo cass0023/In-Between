@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
-
+    public EnemyManager enemyManager;
     public Image[] lives;
     public int livesRemaining;
     
@@ -31,6 +31,7 @@ public class GameController : MonoBehaviour
 
     public void LoseLife()
     {
+        enemyManager.currentEnemy = null;
         livesRemaining--;
         lives[livesRemaining].enabled = false;
 

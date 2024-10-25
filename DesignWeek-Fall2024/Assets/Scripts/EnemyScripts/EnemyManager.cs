@@ -6,13 +6,13 @@ using UnityEngine;
 public class EnemyManager : MonoBehaviour
 {
     public GameObject[] possibleEnemy;
-    [SerializeField]private GameObject currentEnemy;
+    public GameObject currentEnemy;
     [SerializeField]private int randomNum;
     public CeilingGhost crawl;
     public SprintGhost run;
+    public Footsteps walkCheck;
     void Start()
     {
-        crawl = GetComponentInChildren<CeilingGhost>();
         run = GetComponentInChildren<SprintGhost>();
         currentEnemy = null;
     }
@@ -27,7 +27,7 @@ public class EnemyManager : MonoBehaviour
         if(temp <= 0){
             currentEnemy = null;
         }
-        if (currentEnemy == null){
+        if (currentEnemy == null && walkCheck.isWalking == true){
             //randomly chooses an enemy to spawn if there isnt one in scene
             randomNum = Random.Range(0, possibleEnemy.Length);
             currentEnemy = possibleEnemy[randomNum];
