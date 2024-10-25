@@ -942,13 +942,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2671621583415722562}
   - component: {fileID: 8355212466099001400}
-  - component: {fileID: -890005066142552108}
   - component: {fileID: 8007079567839731593}
   - component: {fileID: 5784991181186231355}
   - component: {fileID: 8986801587039442729}
   m_Layer: 0
   m_Name: Ch30_nonPBR@Low Crawl
-  m_TagString: CeilingEnemy
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -992,21 +991,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &-890005066142552108
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3339508185335765240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc208e5a96bd6814e90f2f718880971f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cam: {fileID: 0}
-  camPos: {fileID: 0}
-  delay: 4
 --- !u!54 &8007079567839731593
 Rigidbody:
   m_ObjectHideFlags: 0
