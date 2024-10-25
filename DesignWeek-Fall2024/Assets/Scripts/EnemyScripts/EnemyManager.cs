@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using TMPro.EditorUtilities;
 using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
@@ -11,6 +12,8 @@ public class EnemyManager : MonoBehaviour
     public CeilingGhost crawl;
     public SprintGhost run;
     public Footsteps walkCheck;
+    public bool disableSpawn;
+    public GameObject testDummy;
     void Start()
     {
         run = GetComponentInChildren<SprintGhost>();
@@ -20,6 +23,11 @@ public class EnemyManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (disableSpawn == true){
+            //stops enemies from spawning lol
+            testDummy.tag = "Enemy";
+            currentEnemy = testDummy;
+        }
         //checks if any enemies are in the scene
         GameObject[] cEnemyInScene = GameObject.FindGameObjectsWithTag("CeilingEnemy");
         GameObject[] enemyInScene = GameObject.FindGameObjectsWithTag("Enemy");

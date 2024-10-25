@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public EnemyManager enemyManager;
     public Transform target;
     public float t;
     public float speed;
@@ -30,6 +31,9 @@ public class PlayerMovement : MonoBehaviour
             source.clip = sounds[Random.Range(0, sounds.Length)];
             source.Play();
             ifStart = false;
+        }
+        if(Player.gameObject.tag == "StopSpawn"){
+            enemyManager.disableSpawn = true;
         }
     }
 
