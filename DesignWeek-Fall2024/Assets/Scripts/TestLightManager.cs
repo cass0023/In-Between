@@ -48,6 +48,7 @@ public class TestLightManager : MonoBehaviour
             {
                 ActualEnergy = 0;
                 LigthFlash.enabled = false;
+                flashlight.SetActive(false);
             }
         }
 
