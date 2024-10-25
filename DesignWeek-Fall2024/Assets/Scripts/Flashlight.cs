@@ -6,7 +6,7 @@ public class Flashlight : MonoBehaviour
 {
     private void OnTriggerEnter(Collider collider)
     {
-        if (collider.gameObject.CompareTag("Enemy"))
+        if (collider.gameObject.CompareTag("Enemy")|| collider.gameObject.CompareTag("DoorEnemy"))
         {
             Destroy(collider.gameObject);
         }

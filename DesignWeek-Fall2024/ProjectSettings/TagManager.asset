@@ -9,6 +9,7 @@ TagManager:
   - CeilingEnemy
   - DoorEnemy
   - StopSpawn
+  - Flashlight
   layers:
   - Default
   - TransparentFX

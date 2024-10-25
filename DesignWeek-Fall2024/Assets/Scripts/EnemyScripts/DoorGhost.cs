@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class DoorGhost : MonoBehaviour
 {
+    public int speed;
+    private GameController gameController;
+    private AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
+        gameController = GameObject.Find("Player").GetComponent<GameController>();
     }
 
     // Update is called once per frame
@@ -17,7 +21,16 @@ public class DoorGhost : MonoBehaviour
     }
     void OnTriggerEnter(Collider collider){
         if(collider.name == "DoorCheck"){
-            gameObject.transform.position = Vector3.forward;
+            audioSource.volume = 1f;
+            this.GetComponent<Rigidbody>().velocity = transform.forward * speed;
+            //transform.Translate(Vector3.forward * speed);
+            Destroy(gameObject, 5f);
+        }
+        if(collider.CompareTag("Flashlight")){
+            Destroy(gameObject);
+        }
+        if(collider.name == "Player"){
+            gameController.LoseLife();
         }
     }
 }

@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     public KeyCode flashlightInput;
     public AudioClip[] sounds;
     private AudioSource source;
+    public GameObject doorCheck;
 
     void Start()
     {
@@ -58,6 +59,8 @@ public class PlayerMovement : MonoBehaviour
             Vector3 b = target.position;
             transform.position = Vector3.MoveTowards(a, b, speed);
         }
+        var doorCheckPos = transform.position.z + 5;
+        doorCheck.transform.position = new Vector3(doorCheck.transform.position.x, doorCheck.transform.position.y, doorCheckPos);
 
     }
 
