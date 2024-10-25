@@ -18,11 +18,11 @@ public class GameController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        // if (other.CompareTag("Enemy"))
-        // {
-        //     Destroy(other.gameObject);
-        //     Die();
-        // }
+         if (other.CompareTag("Enemy"))
+        {
+            Destroy(other.gameObject);
+            Die();
+        }
     }
     public void LoseLife()
     {
