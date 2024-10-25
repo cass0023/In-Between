@@ -20,8 +20,7 @@ public class GameController : MonoBehaviour
     private void OnTriggerEnter(Collider Player)
     {
         if (Player.CompareTag("Enemy"))
-        {
-           
+        {         
             Die();
         }
 
@@ -31,7 +30,7 @@ public class GameController : MonoBehaviour
 
     public void LoseLife()
     {
-        enemyManager.currentEnemy = null;
+        Destroy(GameObject.FindWithTag("Enemy"));
         livesRemaining--;
         lives[livesRemaining].enabled = false;
 

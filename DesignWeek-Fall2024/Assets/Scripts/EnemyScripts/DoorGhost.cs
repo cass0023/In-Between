@@ -31,6 +31,7 @@ public class DoorGhost : MonoBehaviour
         }
         if(collider.name == "Player"){
             gameController.LoseLife();
+            Destroy(gameObject);
         }
     }
 }
