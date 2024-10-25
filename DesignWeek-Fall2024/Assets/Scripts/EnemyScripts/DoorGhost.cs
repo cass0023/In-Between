@@ -15,4 +15,9 @@ public class DoorGhost : MonoBehaviour
     {
         
     }
+    void OnTriggerEnter(Collider collider){
+        if(collider.name == "DoorCheck"){
+            gameObject.transform.position = Vector3.forward;
+        }
+    }
 }
